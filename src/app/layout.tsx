@@ -18,37 +18,36 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Agentic Coding Boilerplate",
-    template: "%s | Agentic Coding Boilerplate",
+    default: "E-Store by Md. Shadman Sakib Rahman",
+    template: "%s | E-Store",
   },
   description:
-    "Complete agentic coding boilerplate with authentication, database, AI integration, and modern tooling - perfect for building AI-powered applications and autonomous agents by Leon van Zyl",
+    "Discover curated products with a modern shopping experience. Quality, style, and value — delivered to your door.",
   keywords: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "AI",
-    "OpenRouter",
-    "Boilerplate",
-    "Authentication",
-    "PostgreSQL",
+    "ecommerce",
+    "online store",
+    "shopping",
+    "products",
+    "fashion",
+    "electronics",
+    "home",
   ],
-  authors: [{ name: "Leon van Zyl" }],
-  creator: "Leon van Zyl",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Agentic Coding Boilerplate",
-    title: "Agentic Coding Boilerplate",
+    siteName: "E-Store",
+    title: "E-Store by Md. Shadman Sakib Rahman",
     description:
-      "Complete agentic coding boilerplate with authentication, database, AI integration, and modern tooling",
+      "Discover curated products with a modern shopping experience.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agentic Coding Boilerplate",
+    title: "E-Store by Md. Shadman Sakib Rahman",
     description:
-      "Complete agentic coding boilerplate with authentication, database, AI integration, and modern tooling",
+      "Discover curated products with a modern shopping experience.",
   },
+  authors: [{ name: "Md. Shadman Sakib Rahman" }],
+  creator: "Md. Shadman Sakib Rahman",
   robots: {
     index: true,
     follow: true,
@@ -58,20 +57,21 @@ export const metadata: Metadata = {
 // JSON-LD structured data for SEO
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  name: "Agentic Coding Boilerplate",
+  "@type": "WebSite",
+  name: "E-Store",
   description:
-    "Complete agentic coding boilerplate with authentication, database, AI integration, and modern tooling",
-  applicationCategory: "DeveloperApplication",
-  operatingSystem: "Any",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
+    "Discover curated products with a modern shopping experience.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "{NEXT_PUBLIC_APP_URL}/products?search={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
   },
-  author: {
+  founder: {
     "@type": "Person",
-    name: "Leon van Zyl",
+    name: "Md. Shadman Sakib Rahman",
   },
 };
 
